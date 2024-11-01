@@ -1,0 +1,220 @@
+/* Tab style */
+.waiteraid-booking .tab-box {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.waiteraid-booking .tab-box:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.waiteraid-booking .tab-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 145px;
+  float: left;
+  border-right: 1px solid #1f9ef8;
+}
+
+.waiteraid-booking .tab-nav li {
+  float: left;
+  margin-bottom: 1px;
+}
+
+.waiteraid-booking .tab-nav li a {
+  display: inline-block;
+  width: 125px;
+  padding: 10px 10px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.waiteraid-booking .tab-nav li a:hover {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.waiteraid-booking .tab-nav li.select a {
+  background: #fff;
+  box-shadow: none;
+  border-bottom: 1px solid #1f9ef8;
+  font-weight: 700;
+}
+
+.waiteraid-booking .tab-nav .active {
+  display: inline-block;
+  padding: 5px;
+}
+
+.waiteraid-booking .tab-box > div {
+  margin: 0 0 0 145px;
+  padding: 10px;
+  border-left: 1px solid #1f9ef8;
+}
+
+.waiteraid-booking .tab-panels {
+  background: #fff;
+}
+
+/* Flexbox elements */
+.waiteraid-booking .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.waiteraid-booking .element {
+  width: 100%;
+  padding: 10px;
+}
+
+.waiteraid-booking label {
+  font-weight: 600;
+  cursor: default;
+}
+
+.waiteraid-booking label[for] {
+  cursor: pointer;
+}
+
+/* form elements style */
+.waiteraid-booking .element input[type=text],
+.waiteraid-booking .element input[type=tel],
+.waiteraid-booking .element input[type=number],
+.waiteraid-booking .element input[type=date],
+.waiteraid-booking .element select,
+.waiteraid-booking .element textarea {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.waiteraid-booking fieldset {
+  border: 1px solid #999999;
+  margin: 15px 0;
+  position: relative;
+  min-height: 50px;
+  background: #ffffff;
+}
+
+.waiteraid-booking .control {
+  position: absolute;
+  right: 0;
+}
+
+.waiteraid-booking legend {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 25px 0 10px;
+}
+
+/* Tooltip container */
+.waiteraid-help {
+  font-size: 14px;
+  cursor: help;
+}
+
+.waiteraid-ui-tooltip {
+  position: absolute;
+  background: #333;
+  border-width: 1px !important;
+  border-radius: 3px !important;
+  box-shadow: 1px 1px 2px 1px rgba(214, 214, 214, .5) !important;
+  color: #dedede !important;
+  max-width: 300px !important;
+  padding: 7px !important;
+  text-rendering: optimizeLegibility;
+  text-shadow: none !important;
+  z-index: 100051 !important;
+}
+
+a.waiteraid-help.dashicons-unlock {
+  color: #37c781;
+  cursor: pointer;
+}
+
+a.waiteraid-help.dashicons-lock {
+  color: #e95645;
+  cursor: pointer;
+}
+
+.waiteraid-booking .saving {
+  color: #1f9ef8;
+  margin-right: 15px;
+  opacity: 0;
+}
+
+.waiteraid-booking .saving:before {
+  content: "\f316";
+  font-family: 'Dashicons', sans-serif;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .waiteraid-booking .container {
+    flex-wrap: wrap;
+  }
+}
+
+/**
+Plugin custom style
+ */
+.waiteraid-button-preview {
+  background-color: #fff;
+  min-height: 200px;
+  border-bottom: 1px solid #eee;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.waiteraid-button-preview h3 {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.waiteraid-button-builder {
+  text-align: center;
+  padding: 0 10px;
+}
+
+#waiteraid-button-preview {
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#waiteraid-button-preview:focus {
+  outline:0;
+}
+
+/* Color picker fixed style */
+.color-alpha, .wp-color-result-text {
+  height: 100% !important;
+}
+.wp-picker-clear {
+  height: 30px;
+  margin-left: 5px !important;
+}
+
+/* Color picker positioning */
+.wp-picker-holder {
+  position: absolute;
+  z-index: 999;
+}
+
+/* Thickbox (close button) fix */
+*:focus, *:active {
+  outline: none !important;
+}
+
+/* Thickbox scrollbar fix */
+body.modal-open {
+  overflow: -moz-scrollbars-vertical;
+  -ms-overflow-y: scroll;
+  overflow-y: scroll;
+}
